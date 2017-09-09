@@ -14,11 +14,11 @@ node('php'){
         // sh 'php artisan route:cache'
     }
     
-//    stage('Docker Build') {
-//        sh 'sudo docker build -t jeffersonsouza/todoapi:$BUILD_NUMBER .'
-//    }
+    stage('Docker Build') {
+        sh 'sudo docker build -t jeffersonsouza/todoapi:$BUILD_NUMBER .'
+    }
     
-//    stage('Docker Ship') {
-//        sh 'sudo docker push jeffersonsouza/todoapi:$BUILD_NUMBER'
-//    }
+    stage('Docker Ship') {
+        sh 'sudo docker push jeffersonsouza/todoapi:$BUILD_NUMBER'
+    }
 }
