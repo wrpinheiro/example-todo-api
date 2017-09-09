@@ -5,7 +5,7 @@ node('php'){
     }
     
     stage('Fetch') {
-        git 'https://github.com/jeffersonsouza/example-todo-api.git'
+        checkout scm
     }
     
     stage('Build'){
