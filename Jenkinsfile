@@ -2,6 +2,8 @@ node('php'){
     stage('Clean'){
         deleteDir()
         sh 'ls -la'
+        sh 'echo $PATH'
+        sh 'whoami'
     }
     
     stage('Fetch') {
